@@ -22,7 +22,7 @@ footprints/wylie.pretty/       Shared footprints (.kicad_mod)
 - **Symbol fields**: fill `Manufacturer`, `MPN`, and `Datasheet` on every
   symbol so BOMs are complete for free.
 - **3D model paths**: footprints must reference models as
-  `${WYLIE_LIB_3D}/<model>.step` — never absolute paths. `WYLIE_LIB_3D` is a
+  `${WYLIE_LIB_3D}/wylie.3dshapes/<model>.step` — never absolute paths. `WYLIE_LIB_3D` is a
   KiCad path variable (falls back to the environment variable of the same
   name). Template projects export it automatically from their Makefile/CI; for
   GUI work set it once in *Preferences → Configure Paths* to this repo's
